@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
 		}
 	}
 
-	int array[50];	// Maximal 50 Werte
+	int Wertespeicher[50];	// Maximal 50 Werte
 	int anzahl;	// Anzahl der zu sortierenden Werte
 	int x; 
 	int y; 
@@ -31,19 +31,19 @@ int main(int argc, char *argv[]){
 	scanf("%d",&anzahl);
 	printf("Bitte geben sie die Werte der Elemente ein:");
 	for(x=0;x<anzahl;x++)
-		scanf("%d",&array[x]);
+		scanf("%d",&Wertespeicher[x]);
 	for(x=0;x<anzahl-1;x++){
 		for(y=0;y<anzahl-x-1;y++){
-			if(array[y]>array[y+1]){
-				zwischenwert=array[y];
-				array[y]=array[y+1];
-				array[y+1]=zwischenwert;
+			if(Wertespeicher[y]>Wertespeicher[y+1]){
+				zwischenwert=Wertespeicher[y];
+				Wertespeicher[y]=Wertespeicher[y+1];
+				Wertespeicher[y+1]=zwischenwert;
 			}
 		}
 	}
 	printf("Array nach Bubble Sort:");
 	for(x=0;x<anzahl;x++){
-		printf("%d,",array[x]);
+		printf("%d,",Wertespeicher[x]);
 	}
 	return 0;
 }
