@@ -43,7 +43,7 @@ int main(int argc, char *argv[]){
 	}
 	printf("Array nach Bubble Sort:");
 	for(x=0;x<anzahl;x++){
-		printf("%d",array[x]);
+		printf("%d,",array[x]);
 	}
 	return 0;
 }
