@@ -8,6 +8,8 @@ void help(void){
 	printf("Version: 1.0 \n");
 	printf("Autor: Clara Stute\n");
 	printf("Mit diesem Programm, können bis zu 50 ganze Zahlen der größe nach aufsteigend sortiert werden.\n");
+	printf("Die Anzahl der Element (bis 50) und ihre Werte können beim start des Programms ausgewählt werden.\n");
+	printf("Die sortierten Werte werden in die Konsole ausgegeben.\n");
 }
 int main(int argc, char *argv[]){
 	while ((option = getopt(argc, argv, "h")) != -1) {
